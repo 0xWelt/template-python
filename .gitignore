@@ -1,3 +1,13 @@
+# project specific
+uv.lock
+
+# AI tools
+.claude/
+.crush/
+.cursor/
+CLAUDE.md
+CRUSH.md
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
