@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "package_name"
+name = "template_python"
 description = "My awesome python project"
 
 readme = "README.md"
@@ -37,14 +37,14 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/0xWelt/package_name"
-Repository = "https://github.com/0xWelt/package_name"
+Homepage = "https://github.com/0xWelt/template_python"
+Repository = "https://github.com/0xWelt/template_python"
 
 [tool.setuptools.packages.find]
-include = ["package_name", "package_name.*"]
+include = ["template_python", "template_python.*"]
 
 [tool.setuptools.dynamic]
-version = {attr = "package_name.__version__"}
+version = {attr = "template_python.__version__"}
 
 # Pytest
 [tool.pytest.ini_options]
@@ -67,7 +67,7 @@ ignore-words = "docs/spelling_wordlist.txt"
 target-version = "py312"
 line-length = 100
 output-format = "full"
-src = ["package_name", "examples"]
+src = ["template_python", "examples"]
 
 [tool.ruff.format]
 quote-style = "single"
@@ -135,7 +135,7 @@ ignore = [
     "TRY400",  # error-instead-of-exception
     "W505",    # doc-line-too-long
 ]
-typing-modules = ["package_name.typing"]
+typing-modules = ["template_python.typing"]
 allowed-confusables = ["，", "。", "：", "？", "！", "、", "（", "）", "；", "“", "”"]
 extend-safe-fixes = [
     "C408",     # unnecessary-collection-call
@@ -178,8 +178,8 @@ max-statements = 60
 ]
 
 [tool.ruff.lint.isort]
-known-first-party = ["package_name"]
-known-local-folder = ["package_name", "examples", "tests"]
+known-first-party = ["template_python"]
+known-local-folder = ["template_python", "examples", "tests"]
 lines-after-imports = 2
 
 [tool.ruff.lint.flake8-annotations]
