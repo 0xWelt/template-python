@@ -30,7 +30,7 @@ jobs:
       uses: codecov/codecov-action@v5
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
-        slug: 0xWelt/template-python
+        slug: 0xWelt/template_python
 
     - name: Upload test results to Codecov
       if: ${{ !cancelled() }}
